@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Logged out{% endblock %}
+
+{% block content %}
+    <div class="row container">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <form class="container" action="." method="post">
+                        <span class="card-title">You have been logged out</span>
+                        <a href="{% url 'login' %}">Login again</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
